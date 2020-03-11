@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F7EE58724189B740031924A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7EE58624189B740031924A /* Assets.xcassets */; };
+		8F7EE58A24189B740031924A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7EE58824189B740031924A /* LaunchScreen.storyboard */; };
+		8F7EE59724189B750031924A /* ZWNetworkToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE59624189B750031924A /* ZWNetworkToolTests.m */; };
+		8F7EE5A224189B750031924A /* ZWNetworkToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5A124189B750031924A /* ZWNetworkToolUITests.m */; };
+		8F7EE5B624189C0D0031924A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5B124189C0D0031924A /* main.m */; };
+		8F7EE5B724189C0D0031924A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5B224189C0D0031924A /* AppDelegate.m */; };
+		8F7EE5B824189C0D0031924A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5B424189C0D0031924A /* ViewController.m */; };
+		8F7EE5CD2418A0B70031924A /* ZWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5C62418A0B70031924A /* ZWRequest.m */; };
+		8F7EE5CE2418A0B70031924A /* ZWBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5C92418A0B70031924A /* ZWBaseClient.m */; };
+		8F7EE6072418A12F0031924A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5D42418A12F0031924A /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F7EE6082418A12F0031924A /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5D62418A12F0031924A /* SRWebSocket.m */; };
+		8F7EE6092418A12F0031924A /* NSRunLoop+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5D72418A12F0031924A /* NSRunLoop+SRWebSocket.m */; };
+		8F7EE60A2418A12F0031924A /* SRSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5D92418A12F0031924A /* SRSecurityPolicy.m */; };
+		8F7EE60B2418A12F0031924A /* SRProxyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5DD2418A12F0031924A /* SRProxyConnect.m */; };
+		8F7EE60C2418A12F0031924A /* SRRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5E12418A12F0031924A /* SRRunLoopThread.m */; };
+		8F7EE60D2418A12F0031924A /* SRPinningSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5E42418A12F0031924A /* SRPinningSecurityPolicy.m */; };
+		8F7EE60E2418A12F0031924A /* SRDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5E72418A12F0031924A /* SRDelegateController.m */; };
+		8F7EE60F2418A12F0031924A /* SRMutex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5ED2418A12F0031924A /* SRMutex.m */; };
+		8F7EE6102418A12F0031924A /* SRHTTPConnectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5EE2418A12F0031924A /* SRHTTPConnectMessage.m */; };
+		8F7EE6112418A12F0031924A /* SRURLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5F12418A12F0031924A /* SRURLUtilities.m */; };
+		8F7EE6122418A12F0031924A /* SRLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5F32418A12F0031924A /* SRLog.m */; };
+		8F7EE6132418A12F0031924A /* SRHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5F42418A12F0031924A /* SRHash.m */; };
+		8F7EE6142418A12F0031924A /* SRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5F72418A12F0031924A /* SRError.m */; };
+		8F7EE6152418A12F0031924A /* SRRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5F82418A12F0031924A /* SRRandom.m */; };
+		8F7EE6162418A12F0031924A /* SRSIMDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5FA2418A12F0031924A /* SRSIMDHelpers.m */; };
+		8F7EE6172418A12F0031924A /* SRIOConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5FD2418A12F0031924A /* SRIOConsumer.m */; };
+		8F7EE6182418A12F0031924A /* SRIOConsumerPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE5FF2418A12F0031924A /* SRIOConsumerPool.m */; };
+		8F7EE6192418A12F0031924A /* SRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6002418A12F0031924A /* SRConstants.m */; };
+		8F7EE61A2418A12F0031924A /* BayeuxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6032418A12F0031924A /* BayeuxClient.m */; };
+		8F7EE61B2418A12F0031924A /* NSURLRequest+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6062418A12F0031924A /* NSURLRequest+SRWebSocket.m */; };
+		8F7EE6252418A2B50031924A /* NSData+CustomPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6232418A2B50031924A /* NSData+CustomPadding.m */; };
+		8F7EE62D2418A4C40031924A /* ZWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE62C2418A4C40031924A /* ZWClient.m */; };
+		8F7EE6302418A5770031924A /* ZWEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE62F2418A5770031924A /* ZWEngine.m */; };
+		8F7EE6352418AA680031924A /* NSString+ZWRequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6342418AA680031924A /* NSString+ZWRequestUtil.m */; };
+		8F7EE6382418AADC0031924A /* ZWClient+API.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE6372418AADC0031924A /* ZWClient+API.m */; };
+		8F7EE63B2418AAEB0031924A /* ZWClient+API2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE63A2418AAEB0031924A /* ZWClient+API2.m */; };
+		8F7EE63F2418ABF90031924A /* ZWSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7EE63E2418ABF90031924A /* ZWSocketManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F7EE59324189B750031924A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7EE56F24189B720031924A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7EE57624189B720031924A;
+			remoteInfo = ZWNetworkTool;
+		};
+		8F7EE59E24189B750031924A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7EE56F24189B720031924A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7EE57624189B720031924A;
+			remoteInfo = ZWNetworkTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F7EE57724189B720031924A /* ZWNetworkTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWNetworkTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7EE58624189B740031924A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F7EE58924189B740031924A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F7EE58B24189B740031924A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7EE59224189B750031924A /* ZWNetworkToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWNetworkToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7EE59624189B750031924A /* ZWNetworkToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWNetworkToolTests.m; sourceTree = "<group>"; };
+		8F7EE59824189B750031924A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7EE59D24189B750031924A /* ZWNetworkToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWNetworkToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7EE5A124189B750031924A /* ZWNetworkToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWNetworkToolUITests.m; sourceTree = "<group>"; };
+		8F7EE5A324189B750031924A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7EE5B024189C0D0031924A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F7EE5B124189C0D0031924A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F7EE5B224189C0D0031924A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F7EE5B424189C0D0031924A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F7EE5B524189C0D0031924A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F7EE5C62418A0B70031924A /* ZWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRequest.m; sourceTree = "<group>"; };
+		8F7EE5C82418A0B70031924A /* ZWRequestDefinations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRequestDefinations.h; sourceTree = "<group>"; };
+		8F7EE5C92418A0B70031924A /* ZWBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWBaseClient.m; sourceTree = "<group>"; };
+		8F7EE5CA2418A0B70031924A /* ZWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRequest.h; sourceTree = "<group>"; };
+		8F7EE5CC2418A0B70031924A /* ZWBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWBaseClient.h; sourceTree = "<group>"; };
+		8F7EE5D22418A12F0031924A /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		8F7EE5D32418A12F0031924A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		8F7EE5D42418A12F0031924A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		8F7EE5D62418A12F0031924A /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		8F7EE5D72418A12F0031924A /* NSRunLoop+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+SRWebSocket.m"; sourceTree = "<group>"; };
+		8F7EE5D82418A12F0031924A /* BayeuxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BayeuxClient.h; sourceTree = "<group>"; };
+		8F7EE5D92418A12F0031924A /* SRSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSecurityPolicy.m; sourceTree = "<group>"; };
+		8F7EE5DB2418A12F0031924A /* SRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRConstants.h; sourceTree = "<group>"; };
+		8F7EE5DD2418A12F0031924A /* SRProxyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRProxyConnect.m; sourceTree = "<group>"; };
+		8F7EE5DE2418A12F0031924A /* SRProxyConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRProxyConnect.h; sourceTree = "<group>"; };
+		8F7EE5E02418A12F0031924A /* SRRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRunLoopThread.h; sourceTree = "<group>"; };
+		8F7EE5E12418A12F0031924A /* SRRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRunLoopThread.m; sourceTree = "<group>"; };
+		8F7EE5E32418A12F0031924A /* SRPinningSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPinningSecurityPolicy.h; sourceTree = "<group>"; };
+		8F7EE5E42418A12F0031924A /* SRPinningSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPinningSecurityPolicy.m; sourceTree = "<group>"; };
+		8F7EE5E52418A12F0031924A /* NSRunLoop+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		8F7EE5E72418A12F0031924A /* SRDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDelegateController.m; sourceTree = "<group>"; };
+		8F7EE5E82418A12F0031924A /* SRDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDelegateController.h; sourceTree = "<group>"; };
+		8F7EE5E92418A12F0031924A /* NSURLRequest+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		8F7EE5EB2418A12F0031924A /* SRHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHash.h; sourceTree = "<group>"; };
+		8F7EE5EC2418A12F0031924A /* SRLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLog.h; sourceTree = "<group>"; };
+		8F7EE5ED2418A12F0031924A /* SRMutex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMutex.m; sourceTree = "<group>"; };
+		8F7EE5EE2418A12F0031924A /* SRHTTPConnectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHTTPConnectMessage.m; sourceTree = "<group>"; };
+		8F7EE5EF2418A12F0031924A /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
+		8F7EE5F02418A12F0031924A /* SRRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRandom.h; sourceTree = "<group>"; };
+		8F7EE5F12418A12F0031924A /* SRURLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRURLUtilities.m; sourceTree = "<group>"; };
+		8F7EE5F22418A12F0031924A /* SRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRError.h; sourceTree = "<group>"; };
+		8F7EE5F32418A12F0031924A /* SRLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLog.m; sourceTree = "<group>"; };
+		8F7EE5F42418A12F0031924A /* SRHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHash.m; sourceTree = "<group>"; };
+		8F7EE5F52418A12F0031924A /* SRMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMutex.h; sourceTree = "<group>"; };
+		8F7EE5F62418A12F0031924A /* SRHTTPConnectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHTTPConnectMessage.h; sourceTree = "<group>"; };
+		8F7EE5F72418A12F0031924A /* SRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRError.m; sourceTree = "<group>"; };
+		8F7EE5F82418A12F0031924A /* SRRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRandom.m; sourceTree = "<group>"; };
+		8F7EE5F92418A12F0031924A /* SRURLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRURLUtilities.h; sourceTree = "<group>"; };
+		8F7EE5FA2418A12F0031924A /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
+		8F7EE5FC2418A12F0031924A /* SRIOConsumerPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumerPool.h; sourceTree = "<group>"; };
+		8F7EE5FD2418A12F0031924A /* SRIOConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumer.m; sourceTree = "<group>"; };
+		8F7EE5FE2418A12F0031924A /* SRIOConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumer.h; sourceTree = "<group>"; };
+		8F7EE5FF2418A12F0031924A /* SRIOConsumerPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumerPool.m; sourceTree = "<group>"; };
+		8F7EE6002418A12F0031924A /* SRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRConstants.m; sourceTree = "<group>"; };
+		8F7EE6012418A12F0031924A /* NSURLRequest+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocket.h"; sourceTree = "<group>"; };
+		8F7EE6022418A12F0031924A /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		8F7EE6032418A12F0031924A /* BayeuxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BayeuxClient.m; sourceTree = "<group>"; };
+		8F7EE6042418A12F0031924A /* NSRunLoop+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocket.h"; sourceTree = "<group>"; };
+		8F7EE6052418A12F0031924A /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSecurityPolicy.h; sourceTree = "<group>"; };
+		8F7EE6062418A12F0031924A /* NSURLRequest+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SRWebSocket.m"; sourceTree = "<group>"; };
+		8F7EE6232418A2B50031924A /* NSData+CustomPadding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CustomPadding.m"; sourceTree = "<group>"; };
+		8F7EE6242418A2B50031924A /* NSData+CustomPadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CustomPadding.h"; sourceTree = "<group>"; };
+		8F7EE62A2418A3E00031924A /* ZWNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWNetworkTool.h; sourceTree = "<group>"; };
+		8F7EE62B2418A4C40031924A /* ZWClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWClient.h; sourceTree = "<group>"; };
+		8F7EE62C2418A4C40031924A /* ZWClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWClient.m; sourceTree = "<group>"; };
+		8F7EE62E2418A5770031924A /* ZWEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWEngine.h; sourceTree = "<group>"; };
+		8F7EE62F2418A5770031924A /* ZWEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWEngine.m; sourceTree = "<group>"; };
+		8F7EE6312418AA490031924A /* NSString+ZWRequestUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZWRequestUtil.h"; sourceTree = "<group>"; };
+		8F7EE6342418AA680031924A /* NSString+ZWRequestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZWRequestUtil.m"; sourceTree = "<group>"; };
+		8F7EE6362418AADC0031924A /* ZWClient+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWClient+API.h"; sourceTree = "<group>"; };
+		8F7EE6372418AADC0031924A /* ZWClient+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZWClient+API.m"; sourceTree = "<group>"; };
+		8F7EE6392418AAEB0031924A /* ZWClient+API2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWClient+API2.h"; sourceTree = "<group>"; };
+		8F7EE63A2418AAEB0031924A /* ZWClient+API2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZWClient+API2.m"; sourceTree = "<group>"; };
+		8F7EE63D2418ABF90031924A /* ZWSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWSocketManager.h; sourceTree = "<group>"; };
+		8F7EE63E2418ABF90031924A /* ZWSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWSocketManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F7EE57424189B720031924A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE58F24189B750031924A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE59A24189B750031924A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F7EE56E24189B720031924A = {
+			isa = PBXGroup;
+			children = (
+				8F7EE57924189B720031924A /* ZWNetworkTool */,
+				8F7EE59524189B750031924A /* ZWNetworkToolTests */,
+				8F7EE5A024189B750031924A /* ZWNetworkToolUITests */,
+				8F7EE57824189B720031924A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F7EE57824189B720031924A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE57724189B720031924A /* ZWNetworkTool.app */,
+				8F7EE59224189B750031924A /* ZWNetworkToolTests.xctest */,
+				8F7EE59D24189B750031924A /* ZWNetworkToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F7EE57924189B720031924A /* ZWNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5B924189C3E0031924A /* ZWBaseNetworkTool */,
+				8F7EE5B324189C0D0031924A /* Demo */,
+				8F7EE5AF24189C0D0031924A /* Other */,
+				8F7EE58B24189B740031924A /* Info.plist */,
+			);
+			path = ZWNetworkTool;
+			sourceTree = "<group>";
+		};
+		8F7EE59524189B750031924A /* ZWNetworkToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE59624189B750031924A /* ZWNetworkToolTests.m */,
+				8F7EE59824189B750031924A /* Info.plist */,
+			);
+			path = ZWNetworkToolTests;
+			sourceTree = "<group>";
+		};
+		8F7EE5A024189B750031924A /* ZWNetworkToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5A124189B750031924A /* ZWNetworkToolUITests.m */,
+				8F7EE5A324189B750031924A /* Info.plist */,
+			);
+			path = ZWNetworkToolUITests;
+			sourceTree = "<group>";
+		};
+		8F7EE5AF24189C0D0031924A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5B024189C0D0031924A /* AppDelegate.h */,
+				8F7EE5B224189C0D0031924A /* AppDelegate.m */,
+				8F7EE58624189B740031924A /* Assets.xcassets */,
+				8F7EE58824189B740031924A /* LaunchScreen.storyboard */,
+				8F7EE5B124189C0D0031924A /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8F7EE5B324189C0D0031924A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5B524189C0D0031924A /* ViewController.h */,
+				8F7EE5B424189C0D0031924A /* ViewController.m */,
+				8F7EE6262418A3050031924A /* ZWProjectNetworkTool */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		8F7EE5B924189C3E0031924A /* ZWBaseNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5CC2418A0B70031924A /* ZWBaseClient.h */,
+				8F7EE5C92418A0B70031924A /* ZWBaseClient.m */,
+				8F7EE5CA2418A0B70031924A /* ZWRequest.h */,
+				8F7EE5C62418A0B70031924A /* ZWRequest.m */,
+				8F7EE5C82418A0B70031924A /* ZWRequestDefinations.h */,
+				8F7EE62A2418A3E00031924A /* ZWNetworkTool.h */,
+				8F7EE6222418A2B50031924A /* Categories */,
+				8F7EE5D02418A1180031924A /* Thirdparts */,
+			);
+			path = ZWBaseNetworkTool;
+			sourceTree = "<group>";
+		};
+		8F7EE5D02418A1180031924A /* Thirdparts */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5D12418A12F0031924A /* GTMBase64 */,
+				8F7EE5D52418A12F0031924A /* SRWebSocket */,
+			);
+			path = Thirdparts;
+			sourceTree = "<group>";
+		};
+		8F7EE5D12418A12F0031924A /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5D22418A12F0031924A /* GTMBase64.h */,
+				8F7EE5D32418A12F0031924A /* GTMDefines.h */,
+				8F7EE5D42418A12F0031924A /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		8F7EE5D52418A12F0031924A /* SRWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5D62418A12F0031924A /* SRWebSocket.m */,
+				8F7EE5D72418A12F0031924A /* NSRunLoop+SRWebSocket.m */,
+				8F7EE5D82418A12F0031924A /* BayeuxClient.h */,
+				8F7EE5D92418A12F0031924A /* SRSecurityPolicy.m */,
+				8F7EE5DA2418A12F0031924A /* Internal */,
+				8F7EE6012418A12F0031924A /* NSURLRequest+SRWebSocket.h */,
+				8F7EE6022418A12F0031924A /* SRWebSocket.h */,
+				8F7EE6032418A12F0031924A /* BayeuxClient.m */,
+				8F7EE6042418A12F0031924A /* NSRunLoop+SRWebSocket.h */,
+				8F7EE6052418A12F0031924A /* SRSecurityPolicy.h */,
+				8F7EE6062418A12F0031924A /* NSURLRequest+SRWebSocket.m */,
+			);
+			path = SRWebSocket;
+			sourceTree = "<group>";
+		};
+		8F7EE5DA2418A12F0031924A /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5DB2418A12F0031924A /* SRConstants.h */,
+				8F7EE5DC2418A12F0031924A /* Proxy */,
+				8F7EE5DF2418A12F0031924A /* RunLoop */,
+				8F7EE5E22418A12F0031924A /* Security */,
+				8F7EE5E52418A12F0031924A /* NSRunLoop+SRWebSocketPrivate.h */,
+				8F7EE5E62418A12F0031924A /* Delegate */,
+				8F7EE5E92418A12F0031924A /* NSURLRequest+SRWebSocketPrivate.h */,
+				8F7EE5EA2418A12F0031924A /* Utilities */,
+				8F7EE5FB2418A12F0031924A /* IOConsumer */,
+				8F7EE6002418A12F0031924A /* SRConstants.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		8F7EE5DC2418A12F0031924A /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5DD2418A12F0031924A /* SRProxyConnect.m */,
+				8F7EE5DE2418A12F0031924A /* SRProxyConnect.h */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		8F7EE5DF2418A12F0031924A /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5E02418A12F0031924A /* SRRunLoopThread.h */,
+				8F7EE5E12418A12F0031924A /* SRRunLoopThread.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		8F7EE5E22418A12F0031924A /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5E32418A12F0031924A /* SRPinningSecurityPolicy.h */,
+				8F7EE5E42418A12F0031924A /* SRPinningSecurityPolicy.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		8F7EE5E62418A12F0031924A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5E72418A12F0031924A /* SRDelegateController.m */,
+				8F7EE5E82418A12F0031924A /* SRDelegateController.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8F7EE5EA2418A12F0031924A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5EB2418A12F0031924A /* SRHash.h */,
+				8F7EE5EC2418A12F0031924A /* SRLog.h */,
+				8F7EE5ED2418A12F0031924A /* SRMutex.m */,
+				8F7EE5EE2418A12F0031924A /* SRHTTPConnectMessage.m */,
+				8F7EE5EF2418A12F0031924A /* SRSIMDHelpers.h */,
+				8F7EE5F02418A12F0031924A /* SRRandom.h */,
+				8F7EE5F12418A12F0031924A /* SRURLUtilities.m */,
+				8F7EE5F22418A12F0031924A /* SRError.h */,
+				8F7EE5F32418A12F0031924A /* SRLog.m */,
+				8F7EE5F42418A12F0031924A /* SRHash.m */,
+				8F7EE5F52418A12F0031924A /* SRMutex.h */,
+				8F7EE5F62418A12F0031924A /* SRHTTPConnectMessage.h */,
+				8F7EE5F72418A12F0031924A /* SRError.m */,
+				8F7EE5F82418A12F0031924A /* SRRandom.m */,
+				8F7EE5F92418A12F0031924A /* SRURLUtilities.h */,
+				8F7EE5FA2418A12F0031924A /* SRSIMDHelpers.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8F7EE5FB2418A12F0031924A /* IOConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE5FC2418A12F0031924A /* SRIOConsumerPool.h */,
+				8F7EE5FD2418A12F0031924A /* SRIOConsumer.m */,
+				8F7EE5FE2418A12F0031924A /* SRIOConsumer.h */,
+				8F7EE5FF2418A12F0031924A /* SRIOConsumerPool.m */,
+			);
+			path = IOConsumer;
+			sourceTree = "<group>";
+		};
+		8F7EE6222418A2B50031924A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE6242418A2B50031924A /* NSData+CustomPadding.h */,
+				8F7EE6232418A2B50031924A /* NSData+CustomPadding.m */,
+				8F7EE6312418AA490031924A /* NSString+ZWRequestUtil.h */,
+				8F7EE6342418AA680031924A /* NSString+ZWRequestUtil.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8F7EE6262418A3050031924A /* ZWProjectNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				8F7EE62B2418A4C40031924A /* ZWClient.h */,
+				8F7EE62C2418A4C40031924A /* ZWClient.m */,
+				8F7EE62E2418A5770031924A /* ZWEngine.h */,
+				8F7EE62F2418A5770031924A /* ZWEngine.m */,
+				8F7EE6362418AADC0031924A /* ZWClient+API.h */,
+				8F7EE6372418AADC0031924A /* ZWClient+API.m */,
+				8F7EE6392418AAEB0031924A /* ZWClient+API2.h */,
+				8F7EE63A2418AAEB0031924A /* ZWClient+API2.m */,
+				8F7EE63D2418ABF90031924A /* ZWSocketManager.h */,
+				8F7EE63E2418ABF90031924A /* ZWSocketManager.m */,
+			);
+			path = ZWProjectNetworkTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F7EE57624189B720031924A /* ZWNetworkTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7EE5A624189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkTool" */;
+			buildPhases = (
+				8F7EE57324189B720031924A /* Sources */,
+				8F7EE57424189B720031924A /* Frameworks */,
+				8F7EE57524189B720031924A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWNetworkTool;
+			productName = ZWNetworkTool;
+			productReference = 8F7EE57724189B720031924A /* ZWNetworkTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F7EE59124189B750031924A /* ZWNetworkToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7EE5A924189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkToolTests" */;
+			buildPhases = (
+				8F7EE58E24189B750031924A /* Sources */,
+				8F7EE58F24189B750031924A /* Frameworks */,
+				8F7EE59024189B750031924A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7EE59424189B750031924A /* PBXTargetDependency */,
+			);
+			name = ZWNetworkToolTests;
+			productName = ZWNetworkToolTests;
+			productReference = 8F7EE59224189B750031924A /* ZWNetworkToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F7EE59C24189B750031924A /* ZWNetworkToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7EE5AC24189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkToolUITests" */;
+			buildPhases = (
+				8F7EE59924189B750031924A /* Sources */,
+				8F7EE59A24189B750031924A /* Frameworks */,
+				8F7EE59B24189B750031924A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7EE59F24189B750031924A /* PBXTargetDependency */,
+			);
+			name = ZWNetworkToolUITests;
+			productName = ZWNetworkToolUITests;
+			productReference = 8F7EE59D24189B750031924A /* ZWNetworkToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F7EE56F24189B720031924A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = liunianhuaguoyanxi;
+				TargetAttributes = {
+					8F7EE57624189B720031924A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8F7EE59124189B750031924A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8F7EE57624189B720031924A;
+					};
+					8F7EE59C24189B750031924A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8F7EE57624189B720031924A;
+					};
+				};
+			};
+			buildConfigurationList = 8F7EE57224189B720031924A /* Build configuration list for PBXProject "ZWNetworkTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F7EE56E24189B720031924A;
+			productRefGroup = 8F7EE57824189B720031924A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F7EE57624189B720031924A /* ZWNetworkTool */,
+				8F7EE59124189B750031924A /* ZWNetworkToolTests */,
+				8F7EE59C24189B750031924A /* ZWNetworkToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F7EE57524189B720031924A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7EE58A24189B740031924A /* LaunchScreen.storyboard in Resources */,
+				8F7EE58724189B740031924A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE59024189B750031924A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE59B24189B750031924A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F7EE57324189B720031924A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7EE60F2418A12F0031924A /* SRMutex.m in Sources */,
+				8F7EE6192418A12F0031924A /* SRConstants.m in Sources */,
+				8F7EE6302418A5770031924A /* ZWEngine.m in Sources */,
+				8F7EE6162418A12F0031924A /* SRSIMDHelpers.m in Sources */,
+				8F7EE60B2418A12F0031924A /* SRProxyConnect.m in Sources */,
+				8F7EE6252418A2B50031924A /* NSData+CustomPadding.m in Sources */,
+				8F7EE6092418A12F0031924A /* NSRunLoop+SRWebSocket.m in Sources */,
+				8F7EE5CE2418A0B70031924A /* ZWBaseClient.m in Sources */,
+				8F7EE6102418A12F0031924A /* SRHTTPConnectMessage.m in Sources */,
+				8F7EE62D2418A4C40031924A /* ZWClient.m in Sources */,
+				8F7EE5CD2418A0B70031924A /* ZWRequest.m in Sources */,
+				8F7EE63F2418ABF90031924A /* ZWSocketManager.m in Sources */,
+				8F7EE6142418A12F0031924A /* SRError.m in Sources */,
+				8F7EE60A2418A12F0031924A /* SRSecurityPolicy.m in Sources */,
+				8F7EE5B824189C0D0031924A /* ViewController.m in Sources */,
+				8F7EE6122418A12F0031924A /* SRLog.m in Sources */,
+				8F7EE6172418A12F0031924A /* SRIOConsumer.m in Sources */,
+				8F7EE6352418AA680031924A /* NSString+ZWRequestUtil.m in Sources */,
+				8F7EE63B2418AAEB0031924A /* ZWClient+API2.m in Sources */,
+				8F7EE6082418A12F0031924A /* SRWebSocket.m in Sources */,
+				8F7EE6132418A12F0031924A /* SRHash.m in Sources */,
+				8F7EE60C2418A12F0031924A /* SRRunLoopThread.m in Sources */,
+				8F7EE6182418A12F0031924A /* SRIOConsumerPool.m in Sources */,
+				8F7EE6152418A12F0031924A /* SRRandom.m in Sources */,
+				8F7EE5B624189C0D0031924A /* main.m in Sources */,
+				8F7EE61B2418A12F0031924A /* NSURLRequest+SRWebSocket.m in Sources */,
+				8F7EE5B724189C0D0031924A /* AppDelegate.m in Sources */,
+				8F7EE6382418AADC0031924A /* ZWClient+API.m in Sources */,
+				8F7EE60D2418A12F0031924A /* SRPinningSecurityPolicy.m in Sources */,
+				8F7EE61A2418A12F0031924A /* BayeuxClient.m in Sources */,
+				8F7EE6112418A12F0031924A /* SRURLUtilities.m in Sources */,
+				8F7EE6072418A12F0031924A /* GTMBase64.m in Sources */,
+				8F7EE60E2418A12F0031924A /* SRDelegateController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE58E24189B750031924A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7EE59724189B750031924A /* ZWNetworkToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7EE59924189B750031924A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7EE5A224189B750031924A /* ZWNetworkToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F7EE59424189B750031924A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7EE57624189B720031924A /* ZWNetworkTool */;
+			targetProxy = 8F7EE59324189B750031924A /* PBXContainerItemProxy */;
+		};
+		8F7EE59F24189B750031924A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7EE57624189B720031924A /* ZWNetworkTool */;
+			targetProxy = 8F7EE59E24189B750031924A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F7EE58824189B740031924A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F7EE58924189B740031924A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F7EE5A424189B750031924A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F7EE5A524189B750031924A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F7EE5A724189B750031924A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F7EE5A824189B750031924A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F7EE5AA24189B750031924A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWNetworkTool.app/ZWNetworkTool";
+			};
+			name = Debug;
+		};
+		8F7EE5AB24189B750031924A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWNetworkTool.app/ZWNetworkTool";
+			};
+			name = Release;
+		};
+		8F7EE5AD24189B750031924A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWNetworkTool;
+			};
+			name = Debug;
+		};
+		8F7EE5AE24189B750031924A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KBNV59EQ4;
+				INFOPLIST_FILE = ZWNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWNetworkTool.ZWNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWNetworkTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F7EE57224189B720031924A /* Build configuration list for PBXProject "ZWNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7EE5A424189B750031924A /* Debug */,
+				8F7EE5A524189B750031924A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7EE5A624189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7EE5A724189B750031924A /* Debug */,
+				8F7EE5A824189B750031924A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7EE5A924189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7EE5AA24189B750031924A /* Debug */,
+				8F7EE5AB24189B750031924A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7EE5AC24189B750031924A /* Build configuration list for PBXNativeTarget "ZWNetworkToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7EE5AD24189B750031924A /* Debug */,
+				8F7EE5AE24189B750031924A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F7EE56F24189B720031924A /* Project object */;
+}
